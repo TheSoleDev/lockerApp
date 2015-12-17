@@ -46,9 +46,9 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" charset="utf-8">
-        var successCallback = function(){ console.log('success'); //do some staff };
+        var successCallback = function(){ console.log('success'); alert('success'); };
 
-var errorCallback = function(e){ console.log('error'); console.log(e); };
+var errorCallback = function(e){ console.log('error'); console.log(e); alert(e);};
 
 window.screenLocker.unlock(successCallback, errorCallback);
 </script>
